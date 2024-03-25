@@ -10,7 +10,7 @@ public class Exercicio_09 {
 
         int[] A = new int[5];
         int[] B = new int [5];
-        int[] C = new int [10];
+        int[] C = new int [5];
 
         for(int i = 0;i < 5;i++){
             System.out.println("Digite um numero para o vetor 1 na posição " + i+ ": ");
@@ -21,7 +21,11 @@ public class Exercicio_09 {
             B[i] =leitor.nextInt();
         }
 
-        for(int i = 0;i < 10;i++){
+        // A = [0, 1, 2, 3, 4]
+        // B = [5, 6, 7, 8, 9]
+        // C = [0, 6, 2, 8, 4]
+
+        for(int i = 0;i < 5;i++){
 
             if (i % 2 == 0) {
                 C[i] = A[i];
@@ -33,8 +37,8 @@ public class Exercicio_09 {
            
         }
         System.out.println("Vetor C: ");
-        for(int i = 0;i<10;i++){
-            System.out.println("," + C[i]);
+        for(int i = 0;i< 5;i++){
+            System.out.print("," + C[i]);
         }
 
 
